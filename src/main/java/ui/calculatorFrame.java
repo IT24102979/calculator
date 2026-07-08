@@ -20,6 +20,26 @@ public class calculatorFrame {
 
         //show the frame
         frame.setVisible(true);
+
+        //create a text filed
+        JTextField inputField = new JTextField("0");
+        inputField.setBounds(800,100,1000,300);
+
+        inputField.setEditable(true);
+        inputField.setFont(new Font("Arial",Font.BOLD,50));
+        inputField.setHorizontalAlignment(JTextField.CENTER);
+        frame.add(inputField);
+
+        //create a panel
+        JPanel panel = new JPanel();
+        panel.setLayout(null);
+        panel.add(inputField);
+
+        frame.add(panel);
+
+
+
+
     }
 }
 
